@@ -97,7 +97,7 @@ def main() -> None:
     # ensure_rustfmt_version()
     test_dir = os.path.join(c.RREF_DIR, "tests")
     assert os.path.isdir(test_dir), "test dir missing: " + test_dir
-    refactor_binary = os.path.join(c.ROOT_DIR, "target/debug/c2rust-refactor")
+    refactor_binary = os.path.join(c.ROOT_DIR, "unstable/target/debug/c2rust-refactor")
     if not os.path.isfile(refactor_binary):
         die("build refactor binary first. expected: " + refactor_binary)
 

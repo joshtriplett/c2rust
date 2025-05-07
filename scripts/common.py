@@ -39,7 +39,7 @@ class Config:
     ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
     ROOT_DIR = os.path.abspath(os.path.join(ROOT_DIR, os.pardir))
     BUILD_DIR = os.path.join(ROOT_DIR, 'build' + BUILD_SUFFIX)
-    RREF_DIR = os.path.join(ROOT_DIR, 'c2rust-refactor')
+    RREF_DIR = os.path.join(ROOT_DIR, 'unstable', 'c2rust-refactor')
     C2RUST_DIR = os.path.join(ROOT_DIR, 'c2rust')
     CROSS_CHECKS_DIR = os.path.join(ROOT_DIR, "cross-checks")
     REMON_SUBMOD_DIR = os.path.join(CROSS_CHECKS_DIR, 'ReMon')
@@ -52,7 +52,7 @@ class Config:
     RUST_CHECKS_DIR = os.path.join(CROSS_CHECKS_DIR, 'rust-checks')
 
     TRANSPILE_CRATE_DIR = os.path.join(ROOT_DIR, 'c2rust-transpile')
-    REFACTOR_CRATE_DIR = os.path.join(ROOT_DIR, 'c2rust-refactor')
+    REFACTOR_CRATE_DIR = os.path.join(ROOT_DIR, 'unstable', 'c2rust-refactor')
     AST_BUILDER_CRATE_DIR = os.path.join(ROOT_DIR, 'c2rust-ast-builder')
     AST_EXPORTER_CRATE_DIR = os.path.join(ROOT_DIR, 'c2rust-ast-exporter')
     BITFIELDS_CRATE_DIR = os.path.join(ROOT_DIR, 'c2rust-bitfields')
@@ -61,7 +61,7 @@ class Config:
     XCHECK_DERIVE_CRATE_DIR = os.path.join(RUST_CHECKS_DIR, 'derive-macros')
     XCHECK_BACKEND_DYNAMIC_DLSYM_CRATE_DIR = os.path.join(RUST_CHECKS_DIR, 'backends', 'dynamic-dlsym')
     XCHECK_CONFIG_CRATE_DIR = os.path.join(RUST_CHECKS_DIR, 'config')
-    MACROS_CRATE_DIR = os.path.join(ROOT_DIR, 'c2rust-macros')
+    MACROS_CRATE_DIR = os.path.join(ROOT_DIR, 'unstable', 'c2rust-macros')
     AST_PRINTER_CRATE_DIR = os.path.join(ROOT_DIR, 'c2rust-ast-printer')
 
     CBOR_PREFIX = os.path.join(BUILD_DIR, "tinycbor")
